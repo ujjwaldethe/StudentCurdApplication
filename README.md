@@ -1,52 +1,53 @@
-StudentCurdApp
-Description
-StudentCurdApp is a Java-based CRUD (Create, Read, Update, Delete) web application designed to manage student records using JDBC. It follows a layered architecture with a DAO (Data Access Object) pattern to ensure a clean separation of concerns. The application interacts with a MySQL database for data storage and retrieval. It includes a frontend built using HTML and CSS and is deployed on an Apache Tomcat server using Java Servlets.
+# StudentCurdApp
 
-Features
+## 📌 Description
+**StudentCurdApp** is a Java-based web application that performs CRUD (Create, Read, Update, Delete) operations on student records using JDBC. The application follows a layered architecture using the DAO (Data Access Object) design pattern for a clean and modular structure. It includes a simple frontend using HTML and CSS, and is deployed on an Apache Tomcat server using Java Servlets.
 
-Add new student records
+---
 
-Retrieve student details
+## ✨ Features
+- Add new student records  
+- View student details  
+- Update existing student information  
+- Delete student records  
+- JDBC-based database connectivity  
+- Implements DAO and service layers  
+- HTML/CSS frontend  
+- Java Servlet backend  
+- Runs on Apache Tomcat  
 
-Update existing student information
+---
 
-Delete student records
+## 🛠️ Technologies Used
+- Java (JDK 21)  
+- HTML & CSS (Frontend)  
+- Java Servlets  
+- JDBC (Java Database Connectivity)  
+- MySQL Database  
+- DAO Design Pattern  
+- Apache Tomcat  
+- IntelliJ IDEA (IDE)
 
-Uses JDBC for database connectivity
+---
 
-Implements DAO and service layers for better modularity
+## ⚙️ Installation and Deployment
 
-User-friendly interface with HTML/CSS
+### ✅ Prerequisites
+- Java JDK 21  
+- Apache Tomcat  
+- MySQL Server  
+- IntelliJ IDEA or any Java IDE  
+- MySQL Workbench or any SQL client
 
-Servlet-based request handling
+---
 
-Deployed on Apache Tomcat server
+### 📂 Step 1: Setup MySQL Database
+```sql
+CREATE DATABASE studentdb;
 
-Technologies Used
-
-Java (JDK 21)
-
-HTML & CSS (Frontend)
-
-Java Servlets (Controller Layer)
-
-MySQL Database
-
-JDBC (Java Database Connectivity)
-
-DAO Design Pattern
-
-Apache Tomcat (Web Server)
-
-IntelliJ IDEA (Development Environment)
-
-Installation and Deployment Steps
-Prerequisites
-Java JDK 21 installed
-
-MySQL Server installed and running
-
-Apache Tomcat installed
-
-IntelliJ IDEA or any Java IDE
-
+CREATE TABLE students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT(100),
+    address VARCHAR(100)
+);
