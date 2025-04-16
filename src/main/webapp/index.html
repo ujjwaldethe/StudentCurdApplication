@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="div1">
+
+            <div id="container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+            </div>
+            <svg id="filters">
+                <defs>
+                    <filter id="threshold">
+                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                              0 1 0 0 0
+                              0 0 1 0 0
+                              0 0 0 255 -140" />
+                    </filter>
+                </defs>
+            </svg>  
+        </div>
+        <div class="div2">
+            <div class="buttons">
+                <div>
+                    <button onclick="loadPage('create.html')">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front text">Create</span>
+                    </button>
+                </div>
+                <div>
+                    <button onclick="loadPage('update.html')">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front text">Update</span>
+                    </button>
+                    
+                </div>
+                <div>
+                    <button onclick="loadPage('read.html')">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front text">Read</span>
+                    </button>
+                </div>
+                <div>
+                    <button onclick="loadPage('delete.html')">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front text">Delete</span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="div3">
+            <marquee behavior="" direction="">Welcome To Student Curd App</marquee>
+        </div>
+        <div class="div4">
+            <p>&copy; 2025 Student CRUD App. All rights reserved.</p>
+            <p>Developed by Ujjwal Dethe</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
